@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Общий контейнер для блоков */
+.mind-map__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Стили для блоков (ветвей) */
+.mind-map__block {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    cursor: move;
+    position: relative;
+}
+
+/* Заголовки блоков */
+.mind-map__title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Стили для подсписков (ветвей) */
+.mind-map__sublist {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+/* Каждый элемент внутри блока */
+.mind-map__item {
+    margin: 5px 0;
+}
+
+/* Стиль для основной темы */
+.mind-map__topic--main {
+    color: #007BFF;
+}
