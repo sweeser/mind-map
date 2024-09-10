@@ -6,68 +6,227 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Document</title>
 </head>
-<body>
-    <h1>Frontend Developer Mind Map</h1>
-
-<div class="mind-map__container">
-    <!-- HTML Block -->
-    <div class="mind-map__block" draggable="true">
-        <h2 class="mind-map__title mind-map__topic--main">HTML</h2>
-        <ul class="mind-map__sublist">
-            <li class="mind-map__item">Семантика</li>
-            <li class="mind-map__item">Элементы и атрибуты</li>
-            <li class="mind-map__item">Формы и валидация</li>
-            <li class="mind-map__item">Аудио/видео элементы</li>
-            <li class="mind-map__item">SEO и доступность</li>
-        </ul>
+<body class="body">
+    <div class="container">
+        <div id="main-block" class="block draggable">
+            <a class="block__link" href="">Front-end Development</a>
+        </div>
+        <!-- Блоки HTML, CSS, JS, React -->
+        <div id="HTML-block" class="block draggable">
+            <a class="block__link" href="">HTML</a>
+        </div>
+        <div id="CSS-block" class="block draggable">
+            <a class="block__link" href="">CSS</a>
+        </div>
+        <div id="JS-block" class="block draggable">
+            <a class="block__link" href="">JavaScript</a>
+        </div>
+        <!-- <div id="React-block" class="block draggable">
+            <a class="block__link" href="">React</a>
+        </div> -->
+        <!-- Блоки, связанные с HTML -->
+        <div id="HTML-base" class="sub-block draggable">
+            <a class="block__link" href="">Основы</a>
+        </div>
+        <div id="HTML-formats" class="sub-block draggable">
+            <a class="block__link" href="">Форматирование</a>
+        </div>
+        <div id="HTML-semantic" class="sub-block draggable">
+            <a class="block__link" href="">Семантика</a>
+        </div>
+        <div id="HTML-forms" class="sub-block draggable">
+            <a class="block__link" href="">Формы</a>
+        </div>
+        <div id="HTML-img" class="sub-block draggable">
+            <a class="block__link" href="">Изображения</a>
+        </div>
+        <div id="HTML-links" class="sub-block draggable">
+            <a class="block__link" href="">Ссылки</a>
+        </div>
+        <div id="HTML-meta" class="sub-block draggable">
+            <a class="block__link" href="">Мета</a>
+        </div>
+        <div id="HTML-connection" class="sub-block draggable">
+            <a class="block__link" href="">Связь</a>
+        </div>
+        <div id="HTML-atributes" class="sub-block draggable">
+            <a class="block__link" href="">Глобальные атрибуты</a>
+        </div>
+        <!-- Блоки, связанные с CSS -->
+        <div id="CSS-base" class="sub-block draggable">
+            <a class="block__link" href="">Основы</a>
+        </div>
+        <div id="CSS-selectors" class="sub-block draggable">
+            <a class="block__link" href="">Селекторы</a>
+        </div>
+        <div id="CSS-pseudoC" class="sub-block draggable">
+            <a class="block__link" href="">Псевдоклассы</a>
+        </div>
+        <div id="CSS-pseudoE" class="sub-block draggable">
+            <a class="block__link" href="">Псевдоэлементы</a>
+        </div>
+        <div id="CSS-func" class="sub-block draggable">
+            <a class="block__link" href="">Функции</a>
+        </div>
+        <div id="CSS-dir" class="sub-block draggable">
+            <a class="block__link" href="">Директивы</a>
+        </div>
+        <div id="CSS-global" class="sub-block draggable">
+            <a class="block__link" href="">Глобальные ключевые слова</a>
+        </div>
+        <div id="CSS-colors" class="sub-block draggable">
+            <a class="block__link" href="">Цвета</a>
+        </div>
+        <div id="CSS-measure" class="sub-block draggable">
+            <a class="block__link" href="">Единицы измерения</a>
+        </div>
+        <div id="CSS-animations" class="sub-block draggable">
+            <a class="block__link" href="">Анимации</a>
+        </div>
+        <div id="CSS-transform" class="sub-block draggable">
+            <a class="block__link" href="">Трансформации</a>
+        </div>
+        <div id="CSS-background" class="sub-block draggable">
+            <a class="block__link" href="">Фон</a>
+        </div>
+        <div id="CSS-text" class="sub-block draggable">
+            <a class="block__link" href="">Работа с текстом</a>
+        </div>
+        <div id="CSS-fonts" class="sub-block draggable">
+            <a class="block__link" href="">Вариативные шрифты</a>
+        </div>
+        <div id="CSS-padding" class="sub-block draggable">
+            <a class="block__link" href="">Размеры и отступы</a>
+        </div>
+        <div id="CSS-position" class="sub-block draggable">
+            <a class="block__link" href="">Позиционирование</a>
+        </div>
+        <div id="CSS-list" class="sub-block draggable">
+            <a class="block__link" href="">Списки</a>
+        </div>
+        <div id="CSS-flex" class="sub-block draggable">
+            <a class="block__link" href="">Флексбоксы</a>
+        </div>
+        <div id="CSS-grid" class="sub-block draggable">
+            <a class="block__link" href="">Гриды</a>
+        </div>
+        <div id="CSS-allign" class="sub-block draggable">
+            <a class="block__link" href="">Выравнивание</a>
+        </div>
+        <div id="CSS-forms" class="sub-block draggable">
+            <a class="block__link" href="">Формы</a>
+        </div>
+        <div id="CSS-important" class="sub-block draggable">
+            <a class="block__link" href="">Important!</a>
+        </div>
+        <div id="CSS-visibility" class="sub-block draggable">
+            <a class="block__link" href="">Видимость</a>
+        </div>
+        <div id="CSS-overflow" class="sub-block draggable">
+            <a class="block__link" href="">Переполнение</a>
+        </div>
+        <div id="CSS-float" class="sub-block draggable">
+            <a class="block__link" href="">Обтекаемость</a>
+        </div>
+        <div id="CSS-img" class="sub-block draggable">
+            <a class="block__link" href="">Изображения</a>
+        </div>
+        <div id="CSS-border" class="sub-block draggable">
+            <a class="block__link" href="">Рамки, обводки и тени</a>
+        </div>
+        <div id="CSS-interface" class="sub-block draggable">
+            <a class="block__link" href="">Интерфейс и взаимодействия</a>
+        </div>
+        <div id="CSS-svg" class="sub-block draggable">
+            <a class="block__link" href="">SVG</a>
+        </div>
+        <div id="CSS-custom" class="sub-block draggable">
+            <a class="block__link" href="">Кастомные свойства</a>
+        </div>
+        <div id="CSS-widows" class="sub-block draggable">
+            <a class="block__link" href="">Печать</a>
+        </div>
+        <div id="CSS-table" class="sub-block draggable">
+            <a class="block__link" href="">Таблицы</a>
+        </div>
+        <div id="CSS-counter" class="sub-block draggable">
+            <a class="block__link" href="">Счётчики</a>
+        </div>
+        <div id="CSS-other" class="sub-block draggable">
+            <a class="block__link" href="">Остальное</a>
+        </div>
+        <!-- Блоки, связанные с Java-Script -->
+        <div id="JS-base" class="sub-block draggable">
+            <a class="block__link" href="">Основы</a>
+        </div>
+        <div id="JS-sintaxis" class="sub-block draggable">
+            <a class="block__link" href="">Продвинутый синтаксис</a>
+        </div>
+        <div id="JS-type" class="sub-block draggable">
+            <a class="block__link" href="">Примитивные типы данных</a>
+        </div>
+        <div id="JS-collections" class="sub-block draggable">
+            <a class="block__link" href="">Коллекции</a>
+        </div>
+        <div id="JS-number" class="sub-block draggable">
+            <a class="block__link" href="">Числа</a>
+        </div>
+        <div id="JS-string" class="sub-block draggable">
+            <a class="block__link" href="">Строки</a>
+        </div>
+        <div id="JS-bool" class="sub-block draggable">
+            <a class="block__link" href="">Булев тип</a>
+        </div>
+        <div id="JS-function" class="sub-block draggable">
+            <a class="block__link" href="">Функции</a>
+        </div>
+        <div id="JS-array" class="sub-block draggable">
+            <a class="block__link" href="">Массивы</a>
+        </div>
+        <div id="JS-objects" class="sub-block draggable">
+            <a class="block__link" href="">Объекты</a>
+        </div>
+        <div id="JS-set" class="sub-block draggable">
+            <a class="block__link" href="">Множества</a>
+        </div>
+        <div id="JS-exeptions" class="sub-block draggable">
+            <a class="block__link" href="">Обработка исключений</a>
+        </div>
+        <div id="JS-Math" class="sub-block draggable">
+            <a class="block__link" href="">Math</a>
+        </div>
+        <div id="JS-API" class="sub-block draggable">
+            <a class="block__link" href="">API</a>
+        </div>
+        <div id="JS-DOM" class="sub-block draggable">
+            <a class="block__link" href="">DOM</a>
+        </div>
+        <div id="JS-document" class="sub-block draggable">
+            <a class="block__link" href="">Объект страницы</a>
+        </div>
+        <div id="JS-element" class="sub-block draggable">
+            <a class="block__link" href="">Элемент на странице</a>
+        </div>
+        <div id="JS-storage" class="sub-block draggable">
+            <a class="block__link" href="">Хранение данных в браузере</a>
+        </div>
+        <div id="JS-safe" class="sub-block draggable">
+            <a class="block__link" href="">Работа с памятью</a>
+        </div>
+        <div id="JS-async" class="sub-block draggable">
+            <a class="block__link" href="">Асинхронность</a>
+        </div>
+        <div id="JS-app" class="sub-block draggable">
+            <a class="block__link" href="">Веб-приложение</a>
+        </div>
+        <div id="JS-solve" class="sub-block draggable">
+            <a class="block__link" href="">Типовые решения</a>
+        </div>
+        <div id="JS-other" class="sub-block draggable">
+            <a class="block__link" href="">Остальные</a>
+        </div>
+        <svg id="line" class="line"></svg>
     </div>
-
-    <!-- CSS Block -->
-    <div class="mind-map__block" draggable="true">
-        <h2 class="mind-map__title mind-map__topic--main">CSS</h2>
-        <ul class="mind-map__sublist">
-            <li class="mind-map__item">Основы стилей</li>
-            <li class="mind-map__item">Flexbox/Grid</li>
-            <li class="mind-map__item">Анимации и переходы</li>
-            <li class="mind-map__item">Медиа-запросы</li>
-            <li class="mind-map__item">Препроцессоры</li>
-        </ul>
-    </div>
-
-    <!-- JavaScript Block -->
-    <div class="mind-map__block" draggable="true">
-        <h2 class="mind-map__title mind-map__topic--main">JavaScript</h2>
-        <ul class="mind-map__sublist">
-            <li class="mind-map__item">Основы синтаксиса и типов данных</li>
-            <li class="mind-map__item">DOM и манипуляция с ним</li>
-            <li class="mind-map__item">Асинхронное программирование</li>
-            <li class="mind-map__item">ES6+ (модули, деструктуризация)</li>
-            <li class="mind-map__item">Работа с API</li>
-        </ul>
-    </div>
-
-    <!-- React Block -->
-    <div class="mind-map__block" draggable="true">
-        <h2 class="mind-map__title mind-map__topic--main">React</h2>
-        <ul class="mind-map__sublist">
-            <li class="mind-map__item">Компоненты</li>
-            <li class="mind-map__item">Hooks</li>
-            <li class="mind-map__item">State & Props</li>
-            <li class="mind-map__item">Context API</li>
-            <li class="mind-map__item">SSR (Server-side Rendering)</li>
-        </ul>
-    </div>
-
-    <!-- DevOps Block -->
-    <div class="mind-map__block" draggable="true">
-        <h2 class="mind-map__title mind-map__topic--main">DevOps & Docker</h2>
-        <ul class="mind-map__sublist">
-            <li class="mind-map__item">Docker</li>
-            <li class="mind-map__item">CI/CD</li>
-            <li class="mind-map__item">Документация и Web API</li>
-        </ul>
-    </div>
-</div>
-<script src="./scripts/script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
