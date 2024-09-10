@@ -1,47 +1,136 @@
-body {
+.body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-/* Общий контейнер для блоков */
-.mind-map__container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-/* Стили для блоков (ветвей) */
-.mind-map__block {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    min-width: 200px;
-    cursor: move;
+.container {
     position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
-/* Заголовки блоков */
-.mind-map__title {
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-bottom: 10px;
+.block {
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 10px;
+    position: absolute;
+    cursor: move;
+    user-select: none;
+    padding: 15px;
 }
 
-/* Стили для подсписков (ветвей) */
-.mind-map__sublist {
-    list-style-type: none;
-    padding-left: 10px;
+.block:hover {
+    opacity: 0.8;
 }
 
-/* Каждый элемент внутри блока */
-.mind-map__item {
-    margin: 5px 0;
+.sub-block {
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    cursor: move;
+    user-select: none;
+    padding: 10px;
 }
 
-/* Стиль для основной темы */
-.mind-map__topic--main {
-    color: #007BFF;
+.sub-block:hover {
+    opacity: 0.8;
+}
+
+.block__link {
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Позиционирование блоков */
+#main-block { top: 45%; left: 45%; }
+
+#HTML-block { top: 20%; left: 15%; }
+#HTML-base { top: 10%; left: 10%; }
+#HTML-formats { top: 10%; left: 16%; }
+#HTML-semantic { top: 16%; left: 20%; }
+#HTML-forms { top: 21%; left: 22%; }
+#HTML-img { top: 30%; left: 20%; }
+#HTML-links { top: 30%; left: 10%; }
+#HTML-meta { top: 22%; left: 8%; }
+#HTML-connection { top: 32%; left: 15%; }
+#HTML-atributes { top: 16%; left: 2%; }
+
+#CSS-block { top: 70%; left: 20%; }
+#CSS-base { top: 60%; left: 10%; }
+#CSS-selectors { top: 59%; left: 15%; }
+#CSS-pseudoC { top: 59%; left: 21%; }
+#CSS-pseudoE { top: 65%; left: 30%; }
+#CSS-func { top: 70%; left: 31%; }
+#CSS-dir { top: 75%; left: 31%; }
+#CSS-global { top: 80%; left: 31%; }
+#CSS-colors { top: 84%; left: 28%; }
+#CSS-measure { top: 90%; left: 20%; }
+#CSS-animations { top: 89%; left: 15%; }
+#CSS-transform { top: 80%; left: 12%; }
+#CSS-background { top: 80%; left: 8%; }
+#CSS-text { top: 75%; left: 5%; }
+#CSS-fonts { top: 70%; left: 5%; }
+#CSS-padding { top: 65%; left: 5%; }
+#CSS-position { top: 53%; left: 5%; }
+#CSS-list { top: 53%; left: 18%; }
+#CSS-flex { top: 53%; left: 25%; }
+#CSS-grid { top: 59%; left: 28%; }
+#CSS-allign { top: 67%; left: 38%; }
+#CSS-forms { top: 72%; left: 38%; }
+#CSS-important { top: 86%; left: 33%; }
+#CSS-visibility { top: 91%; left: 30%; }
+#CSS-overflow { top: 96%; left: 25%; }
+#CSS-float { top: 96%; left: 18%; }
+#CSS-img { top: 96%; left: 11%; }
+#CSS-border { top: 91%; left: 5%; }
+#CSS-interface { top: 86%; left: 1%; }
+#CSS-svg { top: 84%; left: 25%; }
+#CSS-custom { top: 60%; left: 34%; }
+#CSS-widows { top: 50%; left: 14%; }
+#CSS-table { top: 58%; left: 2%; }
+#CSS-counter { top: 48%; left: 22%; }
+#CSS-other { top: 48%; left: 30%; }
+
+#JS-block { top: 65%; left: 70%; }
+#JS-base { top: 49%; left: 70%; }
+#JS-sintaxis { top: 50%; left: 75%; }
+#JS-type { top: 55%; left: 80%; }
+#JS-collections { top: 60%; left: 87%; }
+#JS-number { top: 65%; left: 88%; }
+#JS-string { top: 70%; left: 90%; }
+#JS-bool { top: 75%; left: 87%; }
+#JS-function { top: 80%; left: 85%; }
+#JS-array { top: 85%; left: 82%; }
+#JS-objects { top: 90%; left: 80%; }
+#JS-set { top: 95%; left: 75%; }
+#JS-exeptions { top: 92%; left: 64%; }
+#JS-Math { top: 88%; left: 62%; }
+#JS-API { top: 83%; left: 60%; }
+#JS-DOM { top: 78%; left: 58%; }
+#JS-document { top: 73%; left: 53%; }
+#JS-element { top: 68%; left: 53%; }
+#JS-storage { top: 63%; left: 53%; }
+#JS-safe { top: 58%; left: 55%; }
+#JS-async { top: 52%; left: 55%; }
+#JS-app { top: 45%; left: 59%; }
+#JS-solve { top: 52%; left: 62%; }
+#JS-other { top: 40%; left: 64%; }
+
+/* #React-block { top: 50%; left: 57%; } */
+
+/* Стили для линии */
+.line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    color: #FFFFFF;
 }
