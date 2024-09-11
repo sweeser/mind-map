@@ -120,9 +120,35 @@
 #JS-async { top: 52%; left: 55%; }
 #JS-app { top: 45%; left: 59%; }
 #JS-solve { top: 52%; left: 62%; }
-#JS-other { top: 40%; left: 64%; }
+#JS-other { top: 43%; left: 68%; }
 
-/* #React-block { top: 50%; left: 57%; } */
+#Accessibility-block { top: 20%; left: 77%; }
+#AB-base { top: 5%; left: 77%; }
+#AB-help { top: 6%; left: 82%; }
+#AB-CSS { top: 11%; left: 88%; }
+#AB-elements { top: 16%; left: 89%; }
+#AB-ARIA { top: 21%; left: 92%; }
+#AB-specifications { top: 31%; left: 80%; }
+#AB-ARIAG { top: 26%; left: 85%; }
+#AB-names { top: 33%; left: 71%; }
+#AB-landmarks { top: 28%; left: 68%; }
+#AB-area { top: 23%; left: 60%; }
+#AB-structure { top: 10%; left: 60%; }
+#AB-window { top: 5%; left: 65%; }
+#AB-vidgets { top: 2%; left: 70%; }
+#AB-atributesV { top: 18%; left: 55%; }
+#AB-atributesC { top: 13%; left: 52%; }
+
+.zoomed {
+    transform: scale(1.5); 
+    transition: transform 0.5s ease;
+    z-index: 100; 
+}
+
+/* Скрытие всех блоков, кроме выбранного и его дочерних */
+.hidden {
+    display: none;
+}
 
 /* Стили для линии */
 .line {
