@@ -1,0 +1,7 @@
+{
+    "main-block": ["HTML-block", "CSS-block", "JS-block", "Accessibility-block"],
+    "HTML-block": ["HTML-base", "HTML-formats", "HTML-semantic", "HTML-forms", "HTML-img", "HTML-links", "HTML-meta", "HTML-connection", "HTML-atributes"],
+    "CSS-block": ["CSS-base", "CSS-selectors", "CSS-pseudoC", "CSS-pseudoE", "CSS-func", "CSS-dir", "CSS-global", "CSS-colors", "CSS-measure", "CSS-animations", "CSS-transform", "CSS-background", "CSS-text", "CSS-fonts", "CSS-padding", "CSS-position", "CSS-list", "CSS-flex", "CSS-grid", "CSS-allign", "CSS-forms", "CSS-important", "CSS-visibility", "CSS-overflow", "CSS-float", "CSS-img", "CSS-border", "CSS-interface", "CSS-svg", "CSS-custom", "CSS-widows", "CSS-table", "CSS-counter", "CSS-other"],
+    "JS-block": ["JS-base", "JS-sintaxis", "JS-type", "JS-collections", "JS-number", "JS-string", "JS-bool", "JS-function", "JS-array", "JS-objects", "JS-set", "JS-exeptions", "JS-Math", "JS-API", "JS-DOM", "JS-document", "JS-element", "JS-storage", "JS-safe", "JS-async", "JS-app", "JS-solve", "JS-other"],
+    "Accessibility-block": ["AB-base", "AB-help", "AB-CSS", "AB-elements", "AB-ARIA", "AB-specifications", "AB-ARIAG", "AB-names", "AB-landmarks", "AB-area", "AB-structure", "AB-window", "AB-vidgets", "AB-atributesV", "AB-atributesC"]
+}
