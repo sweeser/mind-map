@@ -1,0 +1,29 @@
+.typography {
+    font-family: Arial, sans-serif;
+}
+
+.typography__h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.typography__h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.typography__h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.typography__link {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.typography__text {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+}

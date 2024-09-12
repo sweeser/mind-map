@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/header-styles.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/typography.css">
+    <link rel="stylesheet" href="./styles/main-styles.css">
+    <link rel="stylesheet" href="./styles/content.css">
+    <title>Document</title>
+</head>
+<body class="body typography">
+    <header class="header">
+        <h1 class="header__title typography__h1">Глоссарий</h1>
+        <nav class="header__navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="" class="navigation__link typography__link">Граф</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link typography__link">Автор</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h2 class="main__title typography__h2">Основы</h2>
+        <section class="content">
+            <article class="content__block">
+                <h3 class="content__title typography__h3">Поток в верстке</h3>
+                <p class="content__text typography__text">Поток — это ключевой принцип расположения элементов на странице при отсутствии стилей. Даже если не использовать CSS, браузер предсказуемо отобразит элементы благодаря встроенным правилам.</p>
+                <p class="content__text">Эти правила определяют внешний вид элементов. Например, заголовок <code class="content__code">&lt;h1&gt;</code> больше, чем <code class="content__code">&lt;h2&gt;</code>, а ссылки имеют синий цвет и подчеркивание. Элементы можно разделить на блочные и строчные, их поведение можно изменить через CSS.</p>
+            </article>
+            <article class="content__block">
+                <h3 class="content__title typography__h3">Контекст форматирования</h3>
+                <p class="content__text typography__text">Контекст форматирования определяет расположение элементов в потоке. Блочные элементы формируют блочный контекст, а строчные — строчный. Их расположение зависит от направления письма языка.</p>
+            </article>
+            <article class="content__block">
+                <h3 class="content__title typography__h3">Блочные и строчные элементы</h3>
+                <p class="content__text typography__text">Блочные элементы занимают всю ширину родителя и располагаются друг под другом, тогда как строчные располагаются на одной строке.</p>
+            </article>
+            <article class="content__block">
+                <h3 class="content__title typography__h3">Схлопывание отступов</h3>
+                <p class="content__text typography__text">Вертикальные отступы между блочными элементами могут объединяться, а итоговый отступ будет равен большему из них.</p>
+            </article>
+            <article class="content__block">
+                <h3 class="content__title typography__h3">Выход из потока</h3>
+                <p class="content__text typography__text">Элементы могут выйти из потока с помощью свойств <code class="content__code">float</code> и <code class="content__code">position</code>. В этом случае они перестают взаимодействовать с другими элементами в потоке.</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
