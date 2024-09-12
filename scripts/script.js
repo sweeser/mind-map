@@ -7,19 +7,6 @@ const blockConnections = {
     'Accessibility-block': ['AB-base', 'AB-help', 'AB-CSS', 'AB-elements', 'AB-ARIA', 'AB-specifications', 'AB-ARIAG', 'AB-names', 'AB-landmarks', 'AB-area', 'AB-structure', 'AB-window', 'AB-vidgets', 'AB-atributesV', 'AB-atributesC']
 };
 
-// Функция для загрузки данных из JSON-файла
-async function loadConnections() {
-    const response = await fetch('connections.json');
-    if (!response.ok) {
-        throw new Error('Ошибка загрузки данных');
-    }
-    return await response.json();
-}
-
-// Получение всех перемещаемых элементов
-const draggableElements = document.querySelectorAll('.draggable');
-const line = document.getElementById('line');
-
 // Функция для обновления линии между указанными блоками
 function updateLine() {
     line.innerHTML = '';
